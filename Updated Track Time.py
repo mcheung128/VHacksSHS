@@ -17,7 +17,7 @@ def hour_tracker():
         while today1 >= 24:
             print("That's bullshit")
             today1 = int(input('How many hours did you drive today?'))
-        if int(current[:1]) >= 20:
+        if int(current[:2]) >= 20 or int(current[:2]) <= 6:
             Data["Night_hours"] += today1
             Data["Minutes"] += today2
             if Data["Minutes"] >= 60:
